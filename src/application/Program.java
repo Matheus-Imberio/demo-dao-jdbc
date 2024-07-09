@@ -36,7 +36,11 @@ public class Program {
 		seller = sellerDao.findById(1);
 		seller.setName("João Pe de feijao");
 		sellerDao.update(seller);
-		System.out.println("Completed update!");
+		System.out.println("update Completed!");
+		
+		System.out.println("\n\n=== TEST 6: seller delete =====");
+		sellerDao.deleteById(11);
+		System.out.println("delete Completed!");
 	}
 
 }
